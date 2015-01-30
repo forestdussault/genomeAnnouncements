@@ -15,8 +15,8 @@ def make_path(inPath):
             raise
 
 # Either save the python file in the directory with the files, or provide the appropriate path below
-path = "/media/nas/akoziol/GeneSipping/NCBI_submission/Sequences/allSequences"
-# path = "/media/nas/akoziol/GeneSipping/NCBI_submission/Sequences/renamingContigs"
+# path = "/media/nas/akoziol/GeneSipping/NCBI_submission/Sequences/allSequences"
+path = "/media/nas/akoziol/GeneSipping/NCBI_submission/Sequences/renamingContigs"
 # path = os.getcwd()
 
 # Go to the path
@@ -38,7 +38,7 @@ def prepper(fastaFile):
         # Strip off the file extension from the file name
         name = fasta.split(".")[0]
         print name
-
+        strain = '[strain=%s]' % name
         # This block is custom for my GeneSippr NCBI submission
         # Ignore it for now. Or not. Whatever
         if not "OLC-1682" in name and not "OLC-1683" in name:
@@ -54,7 +54,7 @@ def prepper(fastaFile):
             header = record.id.split("_")
 
             # Make a new ID with the contig number formatted with up to three floating zeroes, as well as the organism
-            newID = "Cont%04d %s" % (float(header[1]), organism)
+            newID = "Cont%04d %s %s" % (float(header[1]), organism, strain)
             # Replace the old record.id
             record.id = newID
             # These need to be left blank (or properly filled), or else the script gets angry
