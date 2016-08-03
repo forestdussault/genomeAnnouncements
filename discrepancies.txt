@@ -1,0 +1,1638 @@
+Discrepancy Report Results
+
+Summary
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all same)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all same)
+DISC_SOURCE_QUALS_ASNDISC:taxid (all present, all same)
+DISC_COUNT_NUCLEOTIDES:136 nucleotide Bioseqs are present
+DISC_LONG_NO_ANNOTATION:73 bioseqs are longer than 5000nt and have no features
+NO_ANNOTATION:136 bioseqs have no features
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+DISC_BACTERIAL_TAX_STRAIN_MISMATCH:136 biosources have tax name/strain mismatch
+MOLTYPE_NOT_MRNA:136 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:136 technique are not set as TSA
+ONCALLER_BIOPROJECT_ID:136 sequences contain BioProject IDs
+DISC_INCONSISTENT_STRUCTURED_COMMENTS:Structured Comment Report (all present, all same)
+DISC_INCONSISTENT_DBLINK:DBLink Report (all present, all same)
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+
+
+Detailed Report
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::136 sources have 'OLC1042' for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::136 sources have 'Escherichia coli' for taxname
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxid (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::136 sources have '562' for taxid
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::136 nucleotide Bioseqs are present
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+
+DiscRep_ALL:DISC_LONG_NO_ANNOTATION::73 bioseqs are longer than 5000nt and have no features
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+
+DiscRep_ALL:NO_ANNOTATION::136 bioseqs have no features
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:DISC_BACTERIAL_TAX_STRAIN_MISMATCH::136 biosources have tax name/strain mismatch
+OLC1042:Cont0001:Escherichia coli
+OLC1042:Cont0002:Escherichia coli
+OLC1042:Cont0003:Escherichia coli
+OLC1042:Cont0004:Escherichia coli
+OLC1042:Cont0005:Escherichia coli
+OLC1042:Cont0006:Escherichia coli
+OLC1042:Cont0007:Escherichia coli
+OLC1042:Cont0008:Escherichia coli
+OLC1042:Cont0009:Escherichia coli
+OLC1042:Cont0010:Escherichia coli
+OLC1042:Cont0011:Escherichia coli
+OLC1042:Cont0012:Escherichia coli
+OLC1042:Cont0013:Escherichia coli
+OLC1042:Cont0014:Escherichia coli
+OLC1042:Cont0015:Escherichia coli
+OLC1042:Cont0016:Escherichia coli
+OLC1042:Cont0017:Escherichia coli
+OLC1042:Cont0018:Escherichia coli
+OLC1042:Cont0019:Escherichia coli
+OLC1042:Cont0020:Escherichia coli
+OLC1042:Cont0021:Escherichia coli
+OLC1042:Cont0022:Escherichia coli
+OLC1042:Cont0023:Escherichia coli
+OLC1042:Cont0024:Escherichia coli
+OLC1042:Cont0025:Escherichia coli
+OLC1042:Cont0026:Escherichia coli
+OLC1042:Cont0027:Escherichia coli
+OLC1042:Cont0028:Escherichia coli
+OLC1042:Cont0029:Escherichia coli
+OLC1042:Cont0030:Escherichia coli
+OLC1042:Cont0031:Escherichia coli
+OLC1042:Cont0032:Escherichia coli
+OLC1042:Cont0033:Escherichia coli
+OLC1042:Cont0034:Escherichia coli
+OLC1042:Cont0035:Escherichia coli
+OLC1042:Cont0036:Escherichia coli
+OLC1042:Cont0037:Escherichia coli
+OLC1042:Cont0038:Escherichia coli
+OLC1042:Cont0039:Escherichia coli
+OLC1042:Cont0040:Escherichia coli
+OLC1042:Cont0041:Escherichia coli
+OLC1042:Cont0042:Escherichia coli
+OLC1042:Cont0043:Escherichia coli
+OLC1042:Cont0044:Escherichia coli
+OLC1042:Cont0045:Escherichia coli
+OLC1042:Cont0046:Escherichia coli
+OLC1042:Cont0047:Escherichia coli
+OLC1042:Cont0048:Escherichia coli
+OLC1042:Cont0049:Escherichia coli
+OLC1042:Cont0050:Escherichia coli
+OLC1042:Cont0051:Escherichia coli
+OLC1042:Cont0052:Escherichia coli
+OLC1042:Cont0053:Escherichia coli
+OLC1042:Cont0054:Escherichia coli
+OLC1042:Cont0055:Escherichia coli
+OLC1042:Cont0056:Escherichia coli
+OLC1042:Cont0057:Escherichia coli
+OLC1042:Cont0058:Escherichia coli
+OLC1042:Cont0059:Escherichia coli
+OLC1042:Cont0060:Escherichia coli
+OLC1042:Cont0061:Escherichia coli
+OLC1042:Cont0062:Escherichia coli
+OLC1042:Cont0063:Escherichia coli
+OLC1042:Cont0064:Escherichia coli
+OLC1042:Cont0065:Escherichia coli
+OLC1042:Cont0066:Escherichia coli
+OLC1042:Cont0067:Escherichia coli
+OLC1042:Cont0068:Escherichia coli
+OLC1042:Cont0069:Escherichia coli
+OLC1042:Cont0070:Escherichia coli
+OLC1042:Cont0071:Escherichia coli
+OLC1042:Cont0072:Escherichia coli
+OLC1042:Cont0073:Escherichia coli
+OLC1042:Cont0074:Escherichia coli
+OLC1042:Cont0075:Escherichia coli
+OLC1042:Cont0076:Escherichia coli
+OLC1042:Cont0077:Escherichia coli
+OLC1042:Cont0078:Escherichia coli
+OLC1042:Cont0079:Escherichia coli
+OLC1042:Cont0080:Escherichia coli
+OLC1042:Cont0081:Escherichia coli
+OLC1042:Cont0082:Escherichia coli
+OLC1042:Cont0083:Escherichia coli
+OLC1042:Cont0084:Escherichia coli
+OLC1042:Cont0085:Escherichia coli
+OLC1042:Cont0086:Escherichia coli
+OLC1042:Cont0087:Escherichia coli
+OLC1042:Cont0088:Escherichia coli
+OLC1042:Cont0089:Escherichia coli
+OLC1042:Cont0090:Escherichia coli
+OLC1042:Cont0091:Escherichia coli
+OLC1042:Cont0092:Escherichia coli
+OLC1042:Cont0093:Escherichia coli
+OLC1042:Cont0094:Escherichia coli
+OLC1042:Cont0095:Escherichia coli
+OLC1042:Cont0096:Escherichia coli
+OLC1042:Cont0097:Escherichia coli
+OLC1042:Cont0098:Escherichia coli
+OLC1042:Cont0099:Escherichia coli
+OLC1042:Cont0100:Escherichia coli
+OLC1042:Cont0101:Escherichia coli
+OLC1042:Cont0102:Escherichia coli
+OLC1042:Cont0103:Escherichia coli
+OLC1042:Cont0104:Escherichia coli
+OLC1042:Cont0105:Escherichia coli
+OLC1042:Cont0106:Escherichia coli
+OLC1042:Cont0107:Escherichia coli
+OLC1042:Cont0108:Escherichia coli
+OLC1042:Cont0109:Escherichia coli
+OLC1042:Cont0110:Escherichia coli
+OLC1042:Cont0111:Escherichia coli
+OLC1042:Cont0112:Escherichia coli
+OLC1042:Cont0113:Escherichia coli
+OLC1042:Cont0114:Escherichia coli
+OLC1042:Cont0115:Escherichia coli
+OLC1042:Cont0116:Escherichia coli
+OLC1042:Cont0117:Escherichia coli
+OLC1042:Cont0118:Escherichia coli
+OLC1042:Cont0119:Escherichia coli
+OLC1042:Cont0120:Escherichia coli
+OLC1042:Cont0121:Escherichia coli
+OLC1042:Cont0122:Escherichia coli
+OLC1042:Cont0123:Escherichia coli
+OLC1042:Cont0124:Escherichia coli
+OLC1042:Cont0125:Escherichia coli
+OLC1042:Cont0126:Escherichia coli
+OLC1042:Cont0127:Escherichia coli
+OLC1042:Cont0128:Escherichia coli
+OLC1042:Cont0129:Escherichia coli
+OLC1042:Cont0130:Escherichia coli
+OLC1042:Cont0131:Escherichia coli
+OLC1042:Cont0132:Escherichia coli
+OLC1042:Cont0133:Escherichia coli
+OLC1042:Cont0134:Escherichia coli
+OLC1042:Cont0135:Escherichia coli
+OLC1042:Cont0136:Escherichia coli
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::136 molecule types are not set as mRNA.
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::136 technique are not set as TSA
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+
+DiscRep_ALL:ONCALLER_BIOPROJECT_ID::136 sequences contain BioProject IDs
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+
+DiscRep_ALL:DISC_INCONSISTENT_STRUCTURED_COMMENTS::Structured Comment Report (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::structured comment field Assembly Method (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::All ##Genome-Assembly-Data-START## structured comments have field structured comment field Assembly Method value 'SPAdes v. 3.7.1'
+OLC1042:Cont0001:StructuredComment
+OLC1042:Cont0002:StructuredComment
+OLC1042:Cont0003:StructuredComment
+OLC1042:Cont0004:StructuredComment
+OLC1042:Cont0005:StructuredComment
+OLC1042:Cont0006:StructuredComment
+OLC1042:Cont0007:StructuredComment
+OLC1042:Cont0008:StructuredComment
+OLC1042:Cont0009:StructuredComment
+OLC1042:Cont0010:StructuredComment
+OLC1042:Cont0011:StructuredComment
+OLC1042:Cont0012:StructuredComment
+OLC1042:Cont0013:StructuredComment
+OLC1042:Cont0014:StructuredComment
+OLC1042:Cont0015:StructuredComment
+OLC1042:Cont0016:StructuredComment
+OLC1042:Cont0017:StructuredComment
+OLC1042:Cont0018:StructuredComment
+OLC1042:Cont0019:StructuredComment
+OLC1042:Cont0020:StructuredComment
+OLC1042:Cont0021:StructuredComment
+OLC1042:Cont0022:StructuredComment
+OLC1042:Cont0023:StructuredComment
+OLC1042:Cont0024:StructuredComment
+OLC1042:Cont0025:StructuredComment
+OLC1042:Cont0026:StructuredComment
+OLC1042:Cont0027:StructuredComment
+OLC1042:Cont0028:StructuredComment
+OLC1042:Cont0029:StructuredComment
+OLC1042:Cont0030:StructuredComment
+OLC1042:Cont0031:StructuredComment
+OLC1042:Cont0032:StructuredComment
+OLC1042:Cont0033:StructuredComment
+OLC1042:Cont0034:StructuredComment
+OLC1042:Cont0035:StructuredComment
+OLC1042:Cont0036:StructuredComment
+OLC1042:Cont0037:StructuredComment
+OLC1042:Cont0038:StructuredComment
+OLC1042:Cont0039:StructuredComment
+OLC1042:Cont0040:StructuredComment
+OLC1042:Cont0041:StructuredComment
+OLC1042:Cont0042:StructuredComment
+OLC1042:Cont0043:StructuredComment
+OLC1042:Cont0044:StructuredComment
+OLC1042:Cont0045:StructuredComment
+OLC1042:Cont0046:StructuredComment
+OLC1042:Cont0047:StructuredComment
+OLC1042:Cont0048:StructuredComment
+OLC1042:Cont0049:StructuredComment
+OLC1042:Cont0050:StructuredComment
+OLC1042:Cont0051:StructuredComment
+OLC1042:Cont0052:StructuredComment
+OLC1042:Cont0053:StructuredComment
+OLC1042:Cont0054:StructuredComment
+OLC1042:Cont0055:StructuredComment
+OLC1042:Cont0056:StructuredComment
+OLC1042:Cont0057:StructuredComment
+OLC1042:Cont0058:StructuredComment
+OLC1042:Cont0059:StructuredComment
+OLC1042:Cont0060:StructuredComment
+OLC1042:Cont0061:StructuredComment
+OLC1042:Cont0062:StructuredComment
+OLC1042:Cont0063:StructuredComment
+OLC1042:Cont0064:StructuredComment
+OLC1042:Cont0065:StructuredComment
+OLC1042:Cont0066:StructuredComment
+OLC1042:Cont0067:StructuredComment
+OLC1042:Cont0068:StructuredComment
+OLC1042:Cont0069:StructuredComment
+OLC1042:Cont0070:StructuredComment
+OLC1042:Cont0071:StructuredComment
+OLC1042:Cont0072:StructuredComment
+OLC1042:Cont0073:StructuredComment
+OLC1042:Cont0074:StructuredComment
+OLC1042:Cont0075:StructuredComment
+OLC1042:Cont0076:StructuredComment
+OLC1042:Cont0077:StructuredComment
+OLC1042:Cont0078:StructuredComment
+OLC1042:Cont0079:StructuredComment
+OLC1042:Cont0080:StructuredComment
+OLC1042:Cont0081:StructuredComment
+OLC1042:Cont0082:StructuredComment
+OLC1042:Cont0083:StructuredComment
+OLC1042:Cont0084:StructuredComment
+OLC1042:Cont0085:StructuredComment
+OLC1042:Cont0086:StructuredComment
+OLC1042:Cont0087:StructuredComment
+OLC1042:Cont0088:StructuredComment
+OLC1042:Cont0089:StructuredComment
+OLC1042:Cont0090:StructuredComment
+OLC1042:Cont0091:StructuredComment
+OLC1042:Cont0092:StructuredComment
+OLC1042:Cont0093:StructuredComment
+OLC1042:Cont0094:StructuredComment
+OLC1042:Cont0095:StructuredComment
+OLC1042:Cont0096:StructuredComment
+OLC1042:Cont0097:StructuredComment
+OLC1042:Cont0098:StructuredComment
+OLC1042:Cont0099:StructuredComment
+OLC1042:Cont0100:StructuredComment
+OLC1042:Cont0101:StructuredComment
+OLC1042:Cont0102:StructuredComment
+OLC1042:Cont0103:StructuredComment
+OLC1042:Cont0104:StructuredComment
+OLC1042:Cont0105:StructuredComment
+OLC1042:Cont0106:StructuredComment
+OLC1042:Cont0107:StructuredComment
+OLC1042:Cont0108:StructuredComment
+OLC1042:Cont0109:StructuredComment
+OLC1042:Cont0110:StructuredComment
+OLC1042:Cont0111:StructuredComment
+OLC1042:Cont0112:StructuredComment
+OLC1042:Cont0113:StructuredComment
+OLC1042:Cont0114:StructuredComment
+OLC1042:Cont0115:StructuredComment
+OLC1042:Cont0116:StructuredComment
+OLC1042:Cont0117:StructuredComment
+OLC1042:Cont0118:StructuredComment
+OLC1042:Cont0119:StructuredComment
+OLC1042:Cont0120:StructuredComment
+OLC1042:Cont0121:StructuredComment
+OLC1042:Cont0122:StructuredComment
+OLC1042:Cont0123:StructuredComment
+OLC1042:Cont0124:StructuredComment
+OLC1042:Cont0125:StructuredComment
+OLC1042:Cont0126:StructuredComment
+OLC1042:Cont0127:StructuredComment
+OLC1042:Cont0128:StructuredComment
+OLC1042:Cont0129:StructuredComment
+OLC1042:Cont0130:StructuredComment
+OLC1042:Cont0131:StructuredComment
+OLC1042:Cont0132:StructuredComment
+OLC1042:Cont0133:StructuredComment
+OLC1042:Cont0134:StructuredComment
+OLC1042:Cont0135:StructuredComment
+OLC1042:Cont0136:StructuredComment
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::structured comment field Genome Coverage (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::All ##Genome-Assembly-Data-START## structured comments have field structured comment field Genome Coverage value '54.87X'
+OLC1042:Cont0001:StructuredComment
+OLC1042:Cont0002:StructuredComment
+OLC1042:Cont0003:StructuredComment
+OLC1042:Cont0004:StructuredComment
+OLC1042:Cont0005:StructuredComment
+OLC1042:Cont0006:StructuredComment
+OLC1042:Cont0007:StructuredComment
+OLC1042:Cont0008:StructuredComment
+OLC1042:Cont0009:StructuredComment
+OLC1042:Cont0010:StructuredComment
+OLC1042:Cont0011:StructuredComment
+OLC1042:Cont0012:StructuredComment
+OLC1042:Cont0013:StructuredComment
+OLC1042:Cont0014:StructuredComment
+OLC1042:Cont0015:StructuredComment
+OLC1042:Cont0016:StructuredComment
+OLC1042:Cont0017:StructuredComment
+OLC1042:Cont0018:StructuredComment
+OLC1042:Cont0019:StructuredComment
+OLC1042:Cont0020:StructuredComment
+OLC1042:Cont0021:StructuredComment
+OLC1042:Cont0022:StructuredComment
+OLC1042:Cont0023:StructuredComment
+OLC1042:Cont0024:StructuredComment
+OLC1042:Cont0025:StructuredComment
+OLC1042:Cont0026:StructuredComment
+OLC1042:Cont0027:StructuredComment
+OLC1042:Cont0028:StructuredComment
+OLC1042:Cont0029:StructuredComment
+OLC1042:Cont0030:StructuredComment
+OLC1042:Cont0031:StructuredComment
+OLC1042:Cont0032:StructuredComment
+OLC1042:Cont0033:StructuredComment
+OLC1042:Cont0034:StructuredComment
+OLC1042:Cont0035:StructuredComment
+OLC1042:Cont0036:StructuredComment
+OLC1042:Cont0037:StructuredComment
+OLC1042:Cont0038:StructuredComment
+OLC1042:Cont0039:StructuredComment
+OLC1042:Cont0040:StructuredComment
+OLC1042:Cont0041:StructuredComment
+OLC1042:Cont0042:StructuredComment
+OLC1042:Cont0043:StructuredComment
+OLC1042:Cont0044:StructuredComment
+OLC1042:Cont0045:StructuredComment
+OLC1042:Cont0046:StructuredComment
+OLC1042:Cont0047:StructuredComment
+OLC1042:Cont0048:StructuredComment
+OLC1042:Cont0049:StructuredComment
+OLC1042:Cont0050:StructuredComment
+OLC1042:Cont0051:StructuredComment
+OLC1042:Cont0052:StructuredComment
+OLC1042:Cont0053:StructuredComment
+OLC1042:Cont0054:StructuredComment
+OLC1042:Cont0055:StructuredComment
+OLC1042:Cont0056:StructuredComment
+OLC1042:Cont0057:StructuredComment
+OLC1042:Cont0058:StructuredComment
+OLC1042:Cont0059:StructuredComment
+OLC1042:Cont0060:StructuredComment
+OLC1042:Cont0061:StructuredComment
+OLC1042:Cont0062:StructuredComment
+OLC1042:Cont0063:StructuredComment
+OLC1042:Cont0064:StructuredComment
+OLC1042:Cont0065:StructuredComment
+OLC1042:Cont0066:StructuredComment
+OLC1042:Cont0067:StructuredComment
+OLC1042:Cont0068:StructuredComment
+OLC1042:Cont0069:StructuredComment
+OLC1042:Cont0070:StructuredComment
+OLC1042:Cont0071:StructuredComment
+OLC1042:Cont0072:StructuredComment
+OLC1042:Cont0073:StructuredComment
+OLC1042:Cont0074:StructuredComment
+OLC1042:Cont0075:StructuredComment
+OLC1042:Cont0076:StructuredComment
+OLC1042:Cont0077:StructuredComment
+OLC1042:Cont0078:StructuredComment
+OLC1042:Cont0079:StructuredComment
+OLC1042:Cont0080:StructuredComment
+OLC1042:Cont0081:StructuredComment
+OLC1042:Cont0082:StructuredComment
+OLC1042:Cont0083:StructuredComment
+OLC1042:Cont0084:StructuredComment
+OLC1042:Cont0085:StructuredComment
+OLC1042:Cont0086:StructuredComment
+OLC1042:Cont0087:StructuredComment
+OLC1042:Cont0088:StructuredComment
+OLC1042:Cont0089:StructuredComment
+OLC1042:Cont0090:StructuredComment
+OLC1042:Cont0091:StructuredComment
+OLC1042:Cont0092:StructuredComment
+OLC1042:Cont0093:StructuredComment
+OLC1042:Cont0094:StructuredComment
+OLC1042:Cont0095:StructuredComment
+OLC1042:Cont0096:StructuredComment
+OLC1042:Cont0097:StructuredComment
+OLC1042:Cont0098:StructuredComment
+OLC1042:Cont0099:StructuredComment
+OLC1042:Cont0100:StructuredComment
+OLC1042:Cont0101:StructuredComment
+OLC1042:Cont0102:StructuredComment
+OLC1042:Cont0103:StructuredComment
+OLC1042:Cont0104:StructuredComment
+OLC1042:Cont0105:StructuredComment
+OLC1042:Cont0106:StructuredComment
+OLC1042:Cont0107:StructuredComment
+OLC1042:Cont0108:StructuredComment
+OLC1042:Cont0109:StructuredComment
+OLC1042:Cont0110:StructuredComment
+OLC1042:Cont0111:StructuredComment
+OLC1042:Cont0112:StructuredComment
+OLC1042:Cont0113:StructuredComment
+OLC1042:Cont0114:StructuredComment
+OLC1042:Cont0115:StructuredComment
+OLC1042:Cont0116:StructuredComment
+OLC1042:Cont0117:StructuredComment
+OLC1042:Cont0118:StructuredComment
+OLC1042:Cont0119:StructuredComment
+OLC1042:Cont0120:StructuredComment
+OLC1042:Cont0121:StructuredComment
+OLC1042:Cont0122:StructuredComment
+OLC1042:Cont0123:StructuredComment
+OLC1042:Cont0124:StructuredComment
+OLC1042:Cont0125:StructuredComment
+OLC1042:Cont0126:StructuredComment
+OLC1042:Cont0127:StructuredComment
+OLC1042:Cont0128:StructuredComment
+OLC1042:Cont0129:StructuredComment
+OLC1042:Cont0130:StructuredComment
+OLC1042:Cont0131:StructuredComment
+OLC1042:Cont0132:StructuredComment
+OLC1042:Cont0133:StructuredComment
+OLC1042:Cont0134:StructuredComment
+OLC1042:Cont0135:StructuredComment
+OLC1042:Cont0136:StructuredComment
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::structured comment field Sequencing Technology (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_STRUCTURED_COMMENTS::All ##Genome-Assembly-Data-START## structured comments have field structured comment field Sequencing Technology value 'Illumina MiSeq'
+OLC1042:Cont0001:StructuredComment
+OLC1042:Cont0002:StructuredComment
+OLC1042:Cont0003:StructuredComment
+OLC1042:Cont0004:StructuredComment
+OLC1042:Cont0005:StructuredComment
+OLC1042:Cont0006:StructuredComment
+OLC1042:Cont0007:StructuredComment
+OLC1042:Cont0008:StructuredComment
+OLC1042:Cont0009:StructuredComment
+OLC1042:Cont0010:StructuredComment
+OLC1042:Cont0011:StructuredComment
+OLC1042:Cont0012:StructuredComment
+OLC1042:Cont0013:StructuredComment
+OLC1042:Cont0014:StructuredComment
+OLC1042:Cont0015:StructuredComment
+OLC1042:Cont0016:StructuredComment
+OLC1042:Cont0017:StructuredComment
+OLC1042:Cont0018:StructuredComment
+OLC1042:Cont0019:StructuredComment
+OLC1042:Cont0020:StructuredComment
+OLC1042:Cont0021:StructuredComment
+OLC1042:Cont0022:StructuredComment
+OLC1042:Cont0023:StructuredComment
+OLC1042:Cont0024:StructuredComment
+OLC1042:Cont0025:StructuredComment
+OLC1042:Cont0026:StructuredComment
+OLC1042:Cont0027:StructuredComment
+OLC1042:Cont0028:StructuredComment
+OLC1042:Cont0029:StructuredComment
+OLC1042:Cont0030:StructuredComment
+OLC1042:Cont0031:StructuredComment
+OLC1042:Cont0032:StructuredComment
+OLC1042:Cont0033:StructuredComment
+OLC1042:Cont0034:StructuredComment
+OLC1042:Cont0035:StructuredComment
+OLC1042:Cont0036:StructuredComment
+OLC1042:Cont0037:StructuredComment
+OLC1042:Cont0038:StructuredComment
+OLC1042:Cont0039:StructuredComment
+OLC1042:Cont0040:StructuredComment
+OLC1042:Cont0041:StructuredComment
+OLC1042:Cont0042:StructuredComment
+OLC1042:Cont0043:StructuredComment
+OLC1042:Cont0044:StructuredComment
+OLC1042:Cont0045:StructuredComment
+OLC1042:Cont0046:StructuredComment
+OLC1042:Cont0047:StructuredComment
+OLC1042:Cont0048:StructuredComment
+OLC1042:Cont0049:StructuredComment
+OLC1042:Cont0050:StructuredComment
+OLC1042:Cont0051:StructuredComment
+OLC1042:Cont0052:StructuredComment
+OLC1042:Cont0053:StructuredComment
+OLC1042:Cont0054:StructuredComment
+OLC1042:Cont0055:StructuredComment
+OLC1042:Cont0056:StructuredComment
+OLC1042:Cont0057:StructuredComment
+OLC1042:Cont0058:StructuredComment
+OLC1042:Cont0059:StructuredComment
+OLC1042:Cont0060:StructuredComment
+OLC1042:Cont0061:StructuredComment
+OLC1042:Cont0062:StructuredComment
+OLC1042:Cont0063:StructuredComment
+OLC1042:Cont0064:StructuredComment
+OLC1042:Cont0065:StructuredComment
+OLC1042:Cont0066:StructuredComment
+OLC1042:Cont0067:StructuredComment
+OLC1042:Cont0068:StructuredComment
+OLC1042:Cont0069:StructuredComment
+OLC1042:Cont0070:StructuredComment
+OLC1042:Cont0071:StructuredComment
+OLC1042:Cont0072:StructuredComment
+OLC1042:Cont0073:StructuredComment
+OLC1042:Cont0074:StructuredComment
+OLC1042:Cont0075:StructuredComment
+OLC1042:Cont0076:StructuredComment
+OLC1042:Cont0077:StructuredComment
+OLC1042:Cont0078:StructuredComment
+OLC1042:Cont0079:StructuredComment
+OLC1042:Cont0080:StructuredComment
+OLC1042:Cont0081:StructuredComment
+OLC1042:Cont0082:StructuredComment
+OLC1042:Cont0083:StructuredComment
+OLC1042:Cont0084:StructuredComment
+OLC1042:Cont0085:StructuredComment
+OLC1042:Cont0086:StructuredComment
+OLC1042:Cont0087:StructuredComment
+OLC1042:Cont0088:StructuredComment
+OLC1042:Cont0089:StructuredComment
+OLC1042:Cont0090:StructuredComment
+OLC1042:Cont0091:StructuredComment
+OLC1042:Cont0092:StructuredComment
+OLC1042:Cont0093:StructuredComment
+OLC1042:Cont0094:StructuredComment
+OLC1042:Cont0095:StructuredComment
+OLC1042:Cont0096:StructuredComment
+OLC1042:Cont0097:StructuredComment
+OLC1042:Cont0098:StructuredComment
+OLC1042:Cont0099:StructuredComment
+OLC1042:Cont0100:StructuredComment
+OLC1042:Cont0101:StructuredComment
+OLC1042:Cont0102:StructuredComment
+OLC1042:Cont0103:StructuredComment
+OLC1042:Cont0104:StructuredComment
+OLC1042:Cont0105:StructuredComment
+OLC1042:Cont0106:StructuredComment
+OLC1042:Cont0107:StructuredComment
+OLC1042:Cont0108:StructuredComment
+OLC1042:Cont0109:StructuredComment
+OLC1042:Cont0110:StructuredComment
+OLC1042:Cont0111:StructuredComment
+OLC1042:Cont0112:StructuredComment
+OLC1042:Cont0113:StructuredComment
+OLC1042:Cont0114:StructuredComment
+OLC1042:Cont0115:StructuredComment
+OLC1042:Cont0116:StructuredComment
+OLC1042:Cont0117:StructuredComment
+OLC1042:Cont0118:StructuredComment
+OLC1042:Cont0119:StructuredComment
+OLC1042:Cont0120:StructuredComment
+OLC1042:Cont0121:StructuredComment
+OLC1042:Cont0122:StructuredComment
+OLC1042:Cont0123:StructuredComment
+OLC1042:Cont0124:StructuredComment
+OLC1042:Cont0125:StructuredComment
+OLC1042:Cont0126:StructuredComment
+OLC1042:Cont0127:StructuredComment
+OLC1042:Cont0128:StructuredComment
+OLC1042:Cont0129:StructuredComment
+OLC1042:Cont0130:StructuredComment
+OLC1042:Cont0131:StructuredComment
+OLC1042:Cont0132:StructuredComment
+OLC1042:Cont0133:StructuredComment
+OLC1042:Cont0134:StructuredComment
+OLC1042:Cont0135:StructuredComment
+OLC1042:Cont0136:StructuredComment
+
+DiscRep_ALL:DISC_INCONSISTENT_DBLINK::DBLink Report (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_DBLINK::BioProject (all present, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_DBLINK::All DBLink objects have field BioProject value 'PRJNA309770'
+OLC1042:Cont0001:DBLink
+OLC1042:Cont0002:DBLink
+OLC1042:Cont0003:DBLink
+OLC1042:Cont0004:DBLink
+OLC1042:Cont0005:DBLink
+OLC1042:Cont0006:DBLink
+OLC1042:Cont0007:DBLink
+OLC1042:Cont0008:DBLink
+OLC1042:Cont0009:DBLink
+OLC1042:Cont0010:DBLink
+OLC1042:Cont0011:DBLink
+OLC1042:Cont0012:DBLink
+OLC1042:Cont0013:DBLink
+OLC1042:Cont0014:DBLink
+OLC1042:Cont0015:DBLink
+OLC1042:Cont0016:DBLink
+OLC1042:Cont0017:DBLink
+OLC1042:Cont0018:DBLink
+OLC1042:Cont0019:DBLink
+OLC1042:Cont0020:DBLink
+OLC1042:Cont0021:DBLink
+OLC1042:Cont0022:DBLink
+OLC1042:Cont0023:DBLink
+OLC1042:Cont0024:DBLink
+OLC1042:Cont0025:DBLink
+OLC1042:Cont0026:DBLink
+OLC1042:Cont0027:DBLink
+OLC1042:Cont0028:DBLink
+OLC1042:Cont0029:DBLink
+OLC1042:Cont0030:DBLink
+OLC1042:Cont0031:DBLink
+OLC1042:Cont0032:DBLink
+OLC1042:Cont0033:DBLink
+OLC1042:Cont0034:DBLink
+OLC1042:Cont0035:DBLink
+OLC1042:Cont0036:DBLink
+OLC1042:Cont0037:DBLink
+OLC1042:Cont0038:DBLink
+OLC1042:Cont0039:DBLink
+OLC1042:Cont0040:DBLink
+OLC1042:Cont0041:DBLink
+OLC1042:Cont0042:DBLink
+OLC1042:Cont0043:DBLink
+OLC1042:Cont0044:DBLink
+OLC1042:Cont0045:DBLink
+OLC1042:Cont0046:DBLink
+OLC1042:Cont0047:DBLink
+OLC1042:Cont0048:DBLink
+OLC1042:Cont0049:DBLink
+OLC1042:Cont0050:DBLink
+OLC1042:Cont0051:DBLink
+OLC1042:Cont0052:DBLink
+OLC1042:Cont0053:DBLink
+OLC1042:Cont0054:DBLink
+OLC1042:Cont0055:DBLink
+OLC1042:Cont0056:DBLink
+OLC1042:Cont0057:DBLink
+OLC1042:Cont0058:DBLink
+OLC1042:Cont0059:DBLink
+OLC1042:Cont0060:DBLink
+OLC1042:Cont0061:DBLink
+OLC1042:Cont0062:DBLink
+OLC1042:Cont0063:DBLink
+OLC1042:Cont0064:DBLink
+OLC1042:Cont0065:DBLink
+OLC1042:Cont0066:DBLink
+OLC1042:Cont0067:DBLink
+OLC1042:Cont0068:DBLink
+OLC1042:Cont0069:DBLink
+OLC1042:Cont0070:DBLink
+OLC1042:Cont0071:DBLink
+OLC1042:Cont0072:DBLink
+OLC1042:Cont0073:DBLink
+OLC1042:Cont0074:DBLink
+OLC1042:Cont0075:DBLink
+OLC1042:Cont0076:DBLink
+OLC1042:Cont0077:DBLink
+OLC1042:Cont0078:DBLink
+OLC1042:Cont0079:DBLink
+OLC1042:Cont0080:DBLink
+OLC1042:Cont0081:DBLink
+OLC1042:Cont0082:DBLink
+OLC1042:Cont0083:DBLink
+OLC1042:Cont0084:DBLink
+OLC1042:Cont0085:DBLink
+OLC1042:Cont0086:DBLink
+OLC1042:Cont0087:DBLink
+OLC1042:Cont0088:DBLink
+OLC1042:Cont0089:DBLink
+OLC1042:Cont0090:DBLink
+OLC1042:Cont0091:DBLink
+OLC1042:Cont0092:DBLink
+OLC1042:Cont0093:DBLink
+OLC1042:Cont0094:DBLink
+OLC1042:Cont0095:DBLink
+OLC1042:Cont0096:DBLink
+OLC1042:Cont0097:DBLink
+OLC1042:Cont0098:DBLink
+OLC1042:Cont0099:DBLink
+OLC1042:Cont0100:DBLink
+OLC1042:Cont0101:DBLink
+OLC1042:Cont0102:DBLink
+OLC1042:Cont0103:DBLink
+OLC1042:Cont0104:DBLink
+OLC1042:Cont0105:DBLink
+OLC1042:Cont0106:DBLink
+OLC1042:Cont0107:DBLink
+OLC1042:Cont0108:DBLink
+OLC1042:Cont0109:DBLink
+OLC1042:Cont0110:DBLink
+OLC1042:Cont0111:DBLink
+OLC1042:Cont0112:DBLink
+OLC1042:Cont0113:DBLink
+OLC1042:Cont0114:DBLink
+OLC1042:Cont0115:DBLink
+OLC1042:Cont0116:DBLink
+OLC1042:Cont0117:DBLink
+OLC1042:Cont0118:DBLink
+OLC1042:Cont0119:DBLink
+OLC1042:Cont0120:DBLink
+OLC1042:Cont0121:DBLink
+OLC1042:Cont0122:DBLink
+OLC1042:Cont0123:DBLink
+OLC1042:Cont0124:DBLink
+OLC1042:Cont0125:DBLink
+OLC1042:Cont0126:DBLink
+OLC1042:Cont0127:DBLink
+OLC1042:Cont0128:DBLink
+OLC1042:Cont0129:DBLink
+OLC1042:Cont0130:DBLink
+OLC1042:Cont0131:DBLink
+OLC1042:Cont0132:DBLink
+OLC1042:Cont0133:DBLink
+OLC1042:Cont0134:DBLink
+OLC1042:Cont0135:DBLink
+OLC1042:Cont0136:DBLink
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::136 Molinfos are missing field technique
+OLC1042:Cont0001 (length 375097)
+OLC1042:Cont0002 (length 370943)
+OLC1042:Cont0003 (length 356379)
+OLC1042:Cont0004 (length 327552)
+OLC1042:Cont0005 (length 270679)
+OLC1042:Cont0006 (length 238440)
+OLC1042:Cont0007 (length 203865)
+OLC1042:Cont0008 (length 195916)
+OLC1042:Cont0009 (length 157145)
+OLC1042:Cont0010 (length 149450)
+OLC1042:Cont0011 (length 142575)
+OLC1042:Cont0012 (length 136198)
+OLC1042:Cont0013 (length 124419)
+OLC1042:Cont0014 (length 118134)
+OLC1042:Cont0015 (length 107829)
+OLC1042:Cont0016 (length 106558)
+OLC1042:Cont0017 (length 105003)
+OLC1042:Cont0018 (length 100158)
+OLC1042:Cont0019 (length 99980)
+OLC1042:Cont0020 (length 96929)
+OLC1042:Cont0021 (length 92366)
+OLC1042:Cont0022 (length 91211)
+OLC1042:Cont0023 (length 79951)
+OLC1042:Cont0024 (length 77867)
+OLC1042:Cont0025 (length 76629)
+OLC1042:Cont0026 (length 56498)
+OLC1042:Cont0027 (length 55661)
+OLC1042:Cont0028 (length 51197)
+OLC1042:Cont0029 (length 47817)
+OLC1042:Cont0030 (length 44790)
+OLC1042:Cont0031 (length 43639)
+OLC1042:Cont0032 (length 43066)
+OLC1042:Cont0033 (length 42435)
+OLC1042:Cont0034 (length 42346)
+OLC1042:Cont0035 (length 40952)
+OLC1042:Cont0036 (length 40020)
+OLC1042:Cont0037 (length 31454)
+OLC1042:Cont0038 (length 30852)
+OLC1042:Cont0039 (length 30363)
+OLC1042:Cont0040 (length 30082)
+OLC1042:Cont0041 (length 28324)
+OLC1042:Cont0042 (length 26324)
+OLC1042:Cont0043 (length 26063)
+OLC1042:Cont0044 (length 25124)
+OLC1042:Cont0045 (length 24381)
+OLC1042:Cont0046 (length 22640)
+OLC1042:Cont0047 (length 21033)
+OLC1042:Cont0048 (length 18321)
+OLC1042:Cont0049 (length 17080)
+OLC1042:Cont0050 (length 16281)
+OLC1042:Cont0051 (length 16123)
+OLC1042:Cont0052 (length 13811)
+OLC1042:Cont0053 (length 12981)
+OLC1042:Cont0054 (length 10497)
+OLC1042:Cont0055 (length 9941)
+OLC1042:Cont0056 (length 9604)
+OLC1042:Cont0057 (length 8947)
+OLC1042:Cont0058 (length 8163)
+OLC1042:Cont0059 (length 8079)
+OLC1042:Cont0060 (length 7672)
+OLC1042:Cont0061 (length 7526)
+OLC1042:Cont0062 (length 7356)
+OLC1042:Cont0063 (length 7347)
+OLC1042:Cont0064 (length 7224)
+OLC1042:Cont0065 (length 6688)
+OLC1042:Cont0066 (length 6410)
+OLC1042:Cont0067 (length 6335)
+OLC1042:Cont0068 (length 6258)
+OLC1042:Cont0069 (length 5957)
+OLC1042:Cont0070 (length 5799)
+OLC1042:Cont0071 (length 5565)
+OLC1042:Cont0072 (length 5526)
+OLC1042:Cont0073 (length 5090)
+OLC1042:Cont0074 (length 4733)
+OLC1042:Cont0075 (length 4475)
+OLC1042:Cont0076 (length 4359)
+OLC1042:Cont0077 (length 4268)
+OLC1042:Cont0078 (length 4107)
+OLC1042:Cont0079 (length 3566)
+OLC1042:Cont0080 (length 3538)
+OLC1042:Cont0081 (length 3468)
+OLC1042:Cont0082 (length 3433)
+OLC1042:Cont0083 (length 3401)
+OLC1042:Cont0084 (length 3365)
+OLC1042:Cont0085 (length 3270)
+OLC1042:Cont0086 (length 3191)
+OLC1042:Cont0087 (length 3175)
+OLC1042:Cont0088 (length 3091)
+OLC1042:Cont0089 (length 3012)
+OLC1042:Cont0090 (length 2837)
+OLC1042:Cont0091 (length 2747)
+OLC1042:Cont0092 (length 2644)
+OLC1042:Cont0093 (length 2598)
+OLC1042:Cont0094 (length 2438)
+OLC1042:Cont0095 (length 2430)
+OLC1042:Cont0096 (length 1961)
+OLC1042:Cont0097 (length 1957)
+OLC1042:Cont0098 (length 1955)
+OLC1042:Cont0099 (length 1860)
+OLC1042:Cont0100 (length 1856)
+OLC1042:Cont0101 (length 1827)
+OLC1042:Cont0102 (length 1813)
+OLC1042:Cont0103 (length 1791)
+OLC1042:Cont0104 (length 1723)
+OLC1042:Cont0105 (length 1710)
+OLC1042:Cont0106 (length 1698)
+OLC1042:Cont0107 (length 1689)
+OLC1042:Cont0108 (length 1570)
+OLC1042:Cont0109 (length 1552)
+OLC1042:Cont0110 (length 1524)
+OLC1042:Cont0111 (length 1496)
+OLC1042:Cont0112 (length 1460)
+OLC1042:Cont0113 (length 1456)
+OLC1042:Cont0114 (length 1451)
+OLC1042:Cont0115 (length 1440)
+OLC1042:Cont0116 (length 1433)
+OLC1042:Cont0117 (length 1391)
+OLC1042:Cont0118 (length 1382)
+OLC1042:Cont0119 (length 1366)
+OLC1042:Cont0120 (length 1304)
+OLC1042:Cont0121 (length 1283)
+OLC1042:Cont0122 (length 1275)
+OLC1042:Cont0123 (length 1275)
+OLC1042:Cont0124 (length 1255)
+OLC1042:Cont0125 (length 1242)
+OLC1042:Cont0126 (length 1227)
+OLC1042:Cont0127 (length 1214)
+OLC1042:Cont0128 (length 1206)
+OLC1042:Cont0129 (length 1173)
+OLC1042:Cont0130 (length 1146)
+OLC1042:Cont0131 (length 1104)
+OLC1042:Cont0132 (length 1077)
+OLC1042:Cont0133 (length 1051)
+OLC1042:Cont0134 (length 1041)
+OLC1042:Cont0135 (length 1035)
+OLC1042:Cont0136 (length 1022)
+

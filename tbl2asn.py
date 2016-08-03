@@ -1,101 +1,78 @@
 #! /usr/env/python
-
-import glob, errno, os, json, re, shutil
-# Argument parser for user-inputted values, and a nifty help menu
-from argparse import ArgumentParser
-
-#Parser for arguments
-parser = ArgumentParser(description='Automate tbl2asn to create beautiful .sqn files for your submission')
-parser.add_argument('-v', '--version', action='version', version='%(prog)s v1.0')
-parser.add_argument('-i', '--input', required=True, help='Specify input directory')
-
-# Get the arguments into a list
-args = vars(parser.parse_args())
-
-# Define variables from the arguments - there may be a more streamlined way to do this
-path = args['input']
+from accessoryfiles import *
+from glob import glob
+import json
+import re
+import shutil
 
 
-def make_path(inPath):
-    """from: http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary \
-    does what is indicated by the URL"""
-    try:
-        os.makedirs(inPath)
-        # os.chmod(inPath, 0777)
-    except OSError as exception:
-        if exception.errno != errno.EEXIST:
-            raise
+class Tbl2asn(object):
 
-# In order to make this script work properly, there are a few accessory files required. Examples of these files should
-#  be included in the tbl2asnExamples directory
-biosamples = open("biosamples.txt").readlines()
-strainBiosample = {}
+    def populatecomments(self):
+        # Load the accessory files into memory
+        self.comments = open(self.commentfile).readlines()
+        self.template = open(self.templatefile).readlines()
+        for sample in self.samples:
+            # Define the strain-specific comment and template files
+            sample.commentfile = '{}/{}.cmt'.format(sample.reformattedpath, sample.strain)
+            # sample.templatefile = '{}reformatted/{}.sbt'.format(self.path, sample.strain)
+            # Write the strain-specific comment file
+            with open(sample.commentfile, 'wb') as commentfile:
+                for comment in self.comments:
+                    #
+                    if "Genome Coverage" in comment:
+                        commentfile.write('Genome Coverage\t{}\n'.format(sample.coverage))
+                    else:
+                        commentfile.write(comment)
+            # Write the strain-specific template file
+            # with open(sample.templatefile, 'wb') as templatefile:
 
-# Parse the biosamples into a dictionary
-for sample in biosamples:
-    data = sample.replace("\xc2\xa0", "").rstrip().split("\t")
-    strainBiosample[data[0]] = data[1]
+    def tbl2asnthreads(self):
+        from threading import Thread
+        for i in range(len(self.samples)):
+            threads = Thread(target=self.tbl2asn, args=())
+            threads.setDaemon(True)
+            threads.start()
+        for sample in self.samples:
+            self.queue.put(sample)
+        self.queue.join()
 
+    def tbl2asn(self):
+        from subprocess import call
+        import os
+        # for sample in self.samples:
+        while True:
+            sample = self.queue.get()
+            sample.sqnfile = '{}sqnfiles/{}.sqn'.format(self.path, sample.strain)
+            sample.tbl2asncommand = 'tbl2asn -p {} -r {} -t {} -a s -X C -V v -Z {}/discrepancies.txt -y ' \
+                                    '"Source DNA available from Burton Blais, 960 Carling Ave., Bldg. 22, Ottawa, ' \
+                                    'Ontario, Canada, K1A 0C6"'.format(sample.reformattedpath, self.sqnpath,
+                                                                       self.templatefile, sample.reformattedpath)
+            if not os.path.isfile(sample.sqnfile):
+                call(sample.tbl2asncommand, shell=True, stdout=self.devnull, stderr=self.devnull)
+                shutil.move('{}{}.val'.format(self.sqnpath, sample.strain), sample.reformattedpath)
+                try:
+                    os.remove('{}errorsummary.val'.format(self.sqnpath))
+                except OSError:
+                    pass
+            dotter()
+            self.queue.task_done()
 
-#Grab the sequence files
-fasta = glob.glob("*.fsa")
-
-genomeCoverage = open("genomeCoverages.txt").readlines()
-coverages = {}
-
-for coverage in genomeCoverage:
-    cov = coverage.rstrip().split("\t")
-    coverages[cov[0]] = cov[1]
-
-comments = open("genome.asm").readlines()
-
-# Read the template file into memory
-template = open("template.sbt").readlines()
-
-
-for fastaFile in fasta:
-    name = fastaFile.split(".")[0]
-    print strainBiosample[name]
-    strainTemplate = template
-    strainComments = comments
-    customTemplate = open("%s.sbt" % name, "wb")
-    customComment = open("%s.cmt" % name, "wb")
-    for line in strainTemplate:
-        # print line
-        if not re.search("SUB800882", line):
-            customTemplate.write(line)
-            # print "!"
-        else:
-            spine = re.sub("SUB800882", str(strainBiosample[name]), line)
-            customTemplate.write(spine)
-    customTemplate.close()
-    for com in strainComments:
-        if not "Genome Coverage" in com:
-            customComment.write(com)
-        else:
-            comm = "Genome Coverage\t%sx\n" % coverages[name]
-            customComment.write(comm)
-    make_path(name)
-    shutil.move(fastaFile, name)
-    shutil.move("%s.sbt" % name, name)
-    shutil.move("%s.cmt" % name, name)
-
-folders = glob.glob("*")
-make_path("%s/sqnFiles/" % path)
-
-print "Running tbl2asn"
-
-for folder in folders:
-    if os.path.isdir(folder) and not "zholding" in folder and not "tbl2asnOut" in folder and not "sqnFiles" in folder:
-        print folder
-        os.chdir("%s/%s" % (path, folder))
-        make_path("%s/%s/tbl2asnOut" % (path, folder))
-        command = "tbl2asn -p %s/%s -r %s/%s/tbl2asnOut/ -t %s.sbt -a s -X C " \
-                  "-y 'Source DNA available from Burton Blais, 960 Carling Ave., Bldg. 22, Ottawa, Ontario," \
-                  " Canada, K1C 0C6' -V vb -Z discrepancies.tx" % (path, folder, path, folder, folder)
-        os.system(command)
-        shutil.copy("%s/%s/tbl2asnOut/%s.sqn" % (path, folder, folder), "%s/sqnFiles" % path)
-        os.chdir(path)
-
-
-
+    def __init__(self, inputobject):
+        from time import time
+        from Queue import Queue
+        # Initialise the variables
+        self.start = inputobject.start
+        self.path = inputobject.path
+        self.commentfile = inputobject.commentfile
+        self.templatefile = inputobject.templatefile
+        self.samples = inputobject.samples
+        # Initialise variables
+        self.comments = ''
+        self.template = ''
+        self.sqnpath = self.path + 'sqnfiles/'
+        make_path(self.sqnpath)
+        self.queue = Queue()
+        self.devnull = open(os.devnull, 'wb')
+        self.populatecomments()
+        self.tbl2asnthreads()
