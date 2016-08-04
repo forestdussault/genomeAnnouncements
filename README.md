@@ -6,6 +6,9 @@
 * Biopython
 
  Installation
+ 
+ `sudo apt-get update`
+ `sudo apt-get install -y build-essential git python-dev python-pip wget` 
 
 Clone the repository:
 
@@ -18,6 +21,13 @@ Install python dependencies:
 cd genomeAnnouncements/
 python setup.py install
 ```
+
+
+Install tbl2asn
+
+`wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/linux64.tbl2asn.gz`
+`gunzip linux64.tbl2asn.gz`
+`sudo mv linux64.tbl2asn /usr/bin/tbl2asn`
 
 
 ## contigPrepper
@@ -34,7 +44,7 @@ D2653,OLC996,2013-SEQ-0123_2014-SEQ-0279,Escherichia coli,O157:H7,93.8052X
 ```
 3) A comment file
 
-Example comment file:
+Example comments file:
 comments.asm
 ```
 StructuredCommentPrefix	##Genome-Assembly-Data-START##
@@ -45,7 +55,7 @@ Sequencing Technology	Illumina MiSeq
 
 ### usage
 
-Example command:
+Example command (from within the genomeAnnouncements folder):
 
 `python contigPrepper.py -f /path/to/organismfile.csv -c /path/to/commentfile.asm -t /path/to/templatefile.sbt -s /path/to/fastqfiles /path`
 
@@ -86,6 +96,6 @@ optional arguments:
                         at: https://submit.ncbi.nlm.nih.gov/genbank/template/s
                         ubmission/
   -s SRA, --sra SRA     Path to a folder containing the fastq files used to
-                        make the assemblies. These fastqfiles will be renamed
+                        make the assemblies. These fastq files will be renamed
                         to match assembly names
 ```
