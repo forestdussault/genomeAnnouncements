@@ -1,8 +1,5 @@
 #! /usr/env/python
 from accessoryfiles import *
-from glob import glob
-import json
-import re
 import shutil
 
 
@@ -15,17 +12,14 @@ class Tbl2asn(object):
         for sample in self.samples:
             # Define the strain-specific comment and template files
             sample.commentfile = '{}/{}.cmt'.format(sample.reformattedpath, sample.strain)
-            # sample.templatefile = '{}reformatted/{}.sbt'.format(self.path, sample.strain)
             # Write the strain-specific comment file
             with open(sample.commentfile, 'wb') as commentfile:
                 for comment in self.comments:
-                    #
+                    # The genome coverage needs to be populated
                     if "Genome Coverage" in comment:
                         commentfile.write('Genome Coverage\t{}\n'.format(sample.coverage))
                     else:
                         commentfile.write(comment)
-            # Write the strain-specific template file
-            # with open(sample.templatefile, 'wb') as templatefile:
 
     def tbl2asnthreads(self):
         from threading import Thread
@@ -59,7 +53,6 @@ class Tbl2asn(object):
             self.queue.task_done()
 
     def __init__(self, inputobject):
-        from time import time
         from Queue import Queue
         # Initialise the variables
         self.start = inputobject.start

@@ -67,12 +67,14 @@ class ContigPrepper(object):
             make_path(sample.reformattedpath)
             sample.reformattedfile = '{}/{}.fsa'.format(sample.reformattedpath, sample.strain)
             if not os.path.isfile(sample.reformattedfile):
-                print sample.name
                 with open(sample.reformattedfile, 'wb') as formattedfile:
                     for record in SeqIO.parse(open(sample.fastafile, 'rU'), 'fasta'):
                         # Set the new record.id
                         record.id = '{}_Cont{:04d} [organism={}] [serotype={}] [strain={}]'.format(sample.strain,
-                                        contigcount, sample.organism, sample.serotype, sample.strain)
+                                                                                                   contigcount,
+                                                                                                   sample.organism,
+                                                                                                   sample.serotype,
+                                                                                                   sample.strain)
                         # Clear the name and description attributes of the record
                         record.name = ''
                         record.description = ''
@@ -84,7 +86,6 @@ class ContigPrepper(object):
     def fastq(self):
         """Renames fastq files to match assembly names"""
         import re
-        print
         for sample in self.samples:
             # Get the names of the fastq files
             sample.fastq = sorted(glob('{}{}*'.format(self.sra, sample.name)))
@@ -100,7 +101,6 @@ class ContigPrepper(object):
                     sample.fastq, ['R1', 'R2'])
             # Except missing files
             except IndexError:
-                print sample.name
                 # Try to find the files if they were already renamed
                 sample.fastq = sorted(glob('{}{}*'.format(self.sra, sample.strain)))
                 try:
@@ -126,8 +126,8 @@ class ContigPrepper(object):
         assert os.path.isfile(self.commentfile), 'Invalid file supplied for comment file: {}' \
             .format(self.commentfile)
         self.templatefile = args.templatefile
-        assert os.path.isfile(self.commentfile), 'Invalid file supplied for template file: {}' \
-            .format(self.template)
+        assert os.path.isfile(self.templatefile), 'Invalid file supplied for template file: {}' \
+            .format(self.templatefile)
         # Initialise variables
         self.fastafiles = []
         self.samples = []
@@ -151,9 +151,9 @@ if __name__ == '__main__':
     from argparse import ArgumentParser
     # Parser for arguments
     parser = ArgumentParser(description='Reformats all the headers in fasta files in a directory to be compatible for'
-                                        'NCBI submissions. The organism must be supplied for each sample.'
+                                        ' NCBI submissions. The organism must be supplied for each sample.'
                                         '>2015-SEQ-0947_19_length_6883_cov_11.9263_ID_37 becomes'
-                                        '>Cont0001 [organism=Listeria monocytogenes] [strain=OLF15251]'
+                                        '>OLF15251_Cont0001 [organism=Listeria monocytogenes] [strain=OLF15251]'
                                         'Reformatted files will be created in: path/reformatted')
     parser.add_argument('path',  help='Specify path of folder containing your fasta files')
     parser.add_argument('-f', '--organismfile',
