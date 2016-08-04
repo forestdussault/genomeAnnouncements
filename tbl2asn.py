@@ -11,7 +11,7 @@ class Tbl2asn(object):
         self.template = open(self.templatefile).readlines()
         for sample in self.samples:
             # Define the strain-specific comment and template files
-            sample.commentfile = '{}/{}.cmt'.format(sample.reformattedpath, sample.strain)
+            sample.commentfile = '{}/{}.cmt'.format(sample.reformattedpath, sample.name)
             # Write the strain-specific comment file
             with open(sample.commentfile, 'wb') as commentfile:
                 for comment in self.comments:
@@ -37,14 +37,14 @@ class Tbl2asn(object):
         # for sample in self.samples:
         while True:
             sample = self.queue.get()
-            sample.sqnfile = '{}sqnfiles/{}.sqn'.format(self.path, sample.strain)
+            sample.sqnfile = '{}sqnfiles/{}.sqn'.format(self.path, sample.name)
             sample.tbl2asncommand = 'tbl2asn -p {} -r {} -t {} -a s -X C -V v -Z {}/discrepancies.txt -y ' \
                                     '"Source DNA available from Burton Blais, 960 Carling Ave., Bldg. 22, Ottawa, ' \
                                     'Ontario, Canada, K1A 0C6"'.format(sample.reformattedpath, self.sqnpath,
                                                                        self.templatefile, sample.reformattedpath)
             if not os.path.isfile(sample.sqnfile):
                 call(sample.tbl2asncommand, shell=True, stdout=self.devnull, stderr=self.devnull)
-                shutil.move('{}{}.val'.format(self.sqnpath, sample.strain), sample.reformattedpath)
+                shutil.move('{}{}.val'.format(self.sqnpath, sample.name), sample.reformattedpath)
                 try:
                     os.remove('{}errorsummary.val'.format(self.sqnpath))
                 except OSError:

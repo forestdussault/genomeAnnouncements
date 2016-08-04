@@ -3,6 +3,21 @@
 ## Requirements
 
 * tbl2asn
+* Biopython
+
+ Installation
+
+Clone the repository:
+
+`https://github.com/adamkoziol/genomeAnnouncements.git`
+
+Install python dependencies:
+
+	
+```
+cd genomeAnnouncements/
+python setup.py install
+```
 
 
 ## contigPrepper
@@ -10,12 +25,12 @@
 Requires accessory files in order to run.
 
 1) A template for tbl2asn to use. Generate the template at: https://submit.ncbi.nlm.nih.gov/genbank/template/submission/
-2) A comma-separated list containing the strain name, the biosample, and the calculated coverage
+2) A comma-separated list containing the sample name, strain name, file name (no extension), organism, and average coverage
 
 Excerpt from example organism file:
 organismdata.csv
 ```
-D2653,2013-SEQ-0123_2014-SEQ-0279,Escherichia coli,O157:H7,93.8052X
+D2653,OLC996,2013-SEQ-0123_2014-SEQ-0279,Escherichia coli,O157:H7,93.8052X
 ```
 3) A comment file
 
@@ -32,7 +47,7 @@ Sequencing Technology	Illumina MiSeq
 
 Example command:
 
-`contigPrepper.py -f /path/to/organismfile.csv -c /path/to/commentfile.asm -t /path/to/templatefile.sbt -s /path/to/fastqfiles /path`
+`python contigPrepper.py -f /path/to/organismfile.csv -c /path/to/commentfile.asm -t /path/to/templatefile.sbt -s /path/to/fastqfiles /path`
 
 ```
 usage: contigPrepper.py [-h] -f ORGANISMFILE -c COMMENTFILE -t TEMPLATEFILE

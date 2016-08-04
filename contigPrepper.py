@@ -23,7 +23,7 @@ class ContigPrepper(object):
         # Grab all the contigs
         self.fastafiles = sorted(glob('{}*.fa*'.format(self.path)))
         # Set the header information for reading the organism file into a dictionary
-        fieldnames = ['sample', 'strain', 'organism', 'serotype', 'coverage']
+        fieldnames = ['sample', 'strain', 'seqID', 'organism', 'serotype', 'coverage']
         with open(self.organismfile, 'rb') as orgfile:
             # Detect the delimiter used in the file
             dialect = Sniffer().sniff(orgfile.read(1024))
@@ -39,7 +39,7 @@ class ContigPrepper(object):
                     # Remove the path and the extension from the fasta file
                     filename = strainname(fastafile)
                     # If the name of the file matches the supplied file name
-                    if row['strain'] == filename:
+                    if row['seqID'] == filename:
                         # Set the name, file name and path, as well as the organism
                         metadata.name = row['sample']
                         metadata.fastafile = fastafile
@@ -63,14 +63,14 @@ class ContigPrepper(object):
             # Reset the contig count to 1 for each sample
             contigcount = 1
             # Create the path for the reformatted file
-            sample.reformattedpath = self.path + sample.strain
+            sample.reformattedpath = self.path + sample.name
             make_path(sample.reformattedpath)
-            sample.reformattedfile = '{}/{}.fsa'.format(sample.reformattedpath, sample.strain)
+            sample.reformattedfile = '{}/{}.fsa'.format(sample.reformattedpath, sample.name)
             if not os.path.isfile(sample.reformattedfile):
                 with open(sample.reformattedfile, 'wb') as formattedfile:
                     for record in SeqIO.parse(open(sample.fastafile, 'rU'), 'fasta'):
                         # Set the new record.id
-                        record.id = '{}_Cont{:04d} [organism={}] [serotype={}] [strain={}]'.format(sample.strain,
+                        record.id = '{}_Cont{:04d} [organism={}] [serotype={}] [strain={}]'.format(sample.name,
                                                                                                    contigcount,
                                                                                                    sample.organism,
                                                                                                    sample.serotype,
@@ -97,18 +97,18 @@ class ContigPrepper(object):
                 sample.forward, sample.reverse = sample.fastq[0], sample.fastq[1]
                 # Map the file renaming function with the old name and the new name, which includes the 'R1/R2'
                 # directionality as the second input of the lambda function
-                map(lambda x, y: os.rename(x, '{}{}_{}{}'.format(self.sra, sample.strain, y, sample.extension)),
+                map(lambda x, y: os.rename(x, '{}{}_{}{}'.format(self.sra, sample.name, y, sample.extension)),
                     sample.fastq, ['R1', 'R2'])
             # Except missing files
             except IndexError:
                 # Try to find the files if they were already renamed
-                sample.fastq = sorted(glob('{}{}*'.format(self.sra, sample.strain)))
+                sample.fastq = sorted(glob('{}{}*'.format(self.sra, sample.name)))
                 try:
                     # Test to see if the list contains two strings
                     sample.fastq[0], sample.fastq[1]
                 except IndexError:
                     # If this strain is truly missing or misnamed, raise the error
-                    print sample.strain
+                    print sample.name
                     raise
 
     def __init__(self, args):
