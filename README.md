@@ -5,7 +5,7 @@
 * tbl2asn
 * Biopython
 
- Installation
+Installation
  
  `sudo apt-get update`
  `sudo apt-get install -y build-essential git python-dev python-pip wget` 
