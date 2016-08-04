@@ -39,9 +39,9 @@ class ContigPrepper(object):
                     # Remove the path and the extension from the fasta file
                     filename = strainname(fastafile)
                     # If the name of the file matches the supplied file name
-                    if row['sample'] == filename:
+                    if row['strain'] == filename:
                         # Set the name, file name and path, as well as the organism
-                        metadata.name = filename
+                        metadata.name = row['sample']
                         metadata.fastafile = fastafile
                         metadata.strain = row['strain']
                         metadata.organism = row['organism']
