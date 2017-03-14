@@ -10,6 +10,7 @@ def strainname(fullname):
     """
     Removes the path (os.path.split(fullname)[1] and the extension (.split(".")[0]
     :param fullname: full path + file name + file extension of a file
+    :return the strain name
     """
     name = os.path.split(fullname)[1].split(".")[0]
     return name
@@ -19,6 +20,7 @@ class ContigPrepper(object):
 
     def populateobject(self):
         """Populate :self.strainorganism"""
+        printtime('Creating objects', self.start)
         from csv import DictReader, Sniffer
         # Grab all the contigs
         self.fastafiles = sorted(glob('{}*.fa*'.format(self.path)))
@@ -58,7 +60,7 @@ class ContigPrepper(object):
     def prepcontigs(self):
         """Rename the contigs to NCBI format with on the organism"""
         from Bio import SeqIO
-        #
+        printtime('Renaming contigs', self.start)
         for sample in self.samples:
             # Reset the contig count to 1 for each sample
             contigcount = 1
@@ -82,10 +84,12 @@ class ContigPrepper(object):
                         SeqIO.write(record, formattedfile, 'fasta')
                         # Increment the contig count
                         contigcount += 1
+            self.dotter.dotter()
 
     def fastq(self):
         """Renames fastq files to match assembly names"""
         import re
+        printtime('Renaming .fastq files', self.start)
         for sample in self.samples:
             # Get the names of the fastq files
             sample.fastq = sorted(glob('{}{}*'.format(self.sra, sample.name)))
@@ -110,6 +114,7 @@ class ContigPrepper(object):
                     # If this strain is truly missing or misnamed, raise the error
                     print sample.name
                     raise
+            self.dotter.dotter()
 
     def __init__(self, args):
         from time import time
@@ -129,21 +134,36 @@ class ContigPrepper(object):
         assert os.path.isfile(self.templatefile), 'Invalid file supplied for template file: {}' \
             .format(self.templatefile)
         # Initialise variables
-        self.fastafiles = []
-        self.samples = []
+        self.fastafiles = list()
+        self.samples = list()
+        self.dotter = Dotter()
         # Populate :self.samples with strain name, file name, and organism
         self.populateobject()
         # Prep the contigs
         self.prepcontigs()
+        self.dotter.globalcounter()
+        # Remove contigs (if necessary)
+        if args.exclude:
+            import contigRemover
+            self.contaminationreport = os.path.join(self.path, args.contaminationreport) if \
+                args.contaminationreport else ''
+            if not os.path.isfile(self.contaminationreport):
+                print 'Please ensure that you provided the name of the contamination report. And that this file ' \
+                      'is present in the path'
+                quit()
+            # Remove the contigs
+            contigRemover.Remove(self)
         # Run the tbl2asn script
         Tbl2asn(self)
+        self.dotter.globalcounter()
         if args.sra:
             self.sra = os.path.join(args.sra, '')
             assert os.path.isdir(self.sra), 'Invalid path supplied for fastq files: {}' \
                 .format(self.sra)
             self.fastq()
-        # Print an exit statement
-        print "\nElapsed Time: {:.2f} seconds".format(time() - self.start)
+            self.dotter.globalcounter()
+            # Print a bold, green exit statement
+            print '\033[92m' + '\033[1m' + "\nElapsed Time: %0.2f seconds" % (time() - self.start) + '\033[0m'
 
 
 # If the script is called from the command line, then call the argument parser
@@ -151,11 +171,12 @@ if __name__ == '__main__':
     from argparse import ArgumentParser
     # Parser for arguments
     parser = ArgumentParser(description='Reformats all the headers in fasta files in a directory to be compatible for'
-                                        ' NCBI submissions. The organism must be supplied for each sample.'
-                                        '>2015-SEQ-0947_19_length_6883_cov_11.9263_ID_37 becomes'
-                                        '>OLF15251_Cont0001 [organism=Listeria monocytogenes] [strain=OLF15251]'
+                                        ' NCBI submissions. The organism must be supplied for each sample. '
+                                        '>2015-SEQ-0947_19_length_6883_cov_11.9263_ID_37 becomes '
+                                        '>OLF15251_Cont0001 [organism=Listeria monocytogenes] [strain=OLF15251] '
                                         'Reformatted files will be created in: path/reformatted')
-    parser.add_argument('path',  help='Specify path of folder containing your fasta files')
+    parser.add_argument('path',
+                        help='Specify path of folder containing your fasta files')
     parser.add_argument('-f', '--organismfile',
                         required=True,
                         help='A comma-separated list with the sample, strain, and organism names, and the coverage  '
@@ -179,6 +200,13 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--sra',
                         help='Path to a folder containing the fastq files used to make the assemblies. These fastq'
                              'files will be renamed to match assembly names')
+    parser.add_argument('-e', '--exclude',
+                        action='store_true',
+                        help='Trim and/or exclude contigs (and subsequently renumber downstream contigs) '
+                             'identified to be contaminated by NCBI\'s contamination screen')
+    parser.add_argument('-r', '--contaminationreport',
+                        help='Name of .txt file containing trim/exclude information. This is usually the FCSreport.txt'
+                             'returned by NCBI following the upload of assemblies')
     # Get the arguments into an object
     arguments = parser.parse_args()
     # Run the function

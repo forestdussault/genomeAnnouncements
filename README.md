@@ -61,7 +61,7 @@ Example command (from within the genomeAnnouncements folder):
 
 ```
 usage: contigPrepper.py [-h] -f ORGANISMFILE -c COMMENTFILE -t TEMPLATEFILE
-                        [-s SRA]
+                        [-s SRA] [-e] [-r CONTAMINATIONREPORT]
                         path
 
 Reformats all the headers in fasta files in a directory to be compatible
@@ -76,7 +76,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -f ORGANISMFILE, --organismfile ORGANISMFILE
+  -f, --organismfile
                         A comma-separated list with the sample, strain, and
                         organism names, and the coverage (one sample
                         name/strain name/organism pair per
@@ -85,17 +85,26 @@ optional arguments:
                         coli,18.70 If the file is in the path, just provide
                         the file name, but if it is in a different folder, the
                         path and file name must be supplied.
-  -c COMMENTFILE, --commentfile COMMENTFILE
+  -c, --commentfile
                         A file of comments used in preparing .sqn files. The
                         file looks something like this:Source DNA available
                         from :name :address StructuredCommentPrefix ##Genome-
                         Assembly-Data-START## Assembly Method :method Genome
                         Coverage Sequencing Technology :platform
-  -t TEMPLATEFILE, --templatefile TEMPLATEFILE
+  -t, --templatefile
                         A template for tbl2asn to use. Generate the template
                         at: https://submit.ncbi.nlm.nih.gov/genbank/template/s
                         ubmission/
-  -s SRA, --sra SRA     Path to a folder containing the fastq files used to
+  -s, --sra      
+                        Path to a folder containing the fastq files used to
                         make the assemblies. These fastq files will be renamed
                         to match assembly names
+  -e, --exclude         
+                        Trim and/or exclude contigs (and subsequently renumber
+                        downstream contigs) identified to be contaminated by
+                        NCBI's contamination screen
+  -r, --contaminationreport
+                        Name of .txt file containing trim/exclude information.
+                        This is usually the FCSreport.txtreturned by NCBI
+                        following the upload of assemblies
 ```
