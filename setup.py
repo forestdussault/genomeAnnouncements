@@ -13,5 +13,5 @@ setup(
     description='Automates preparation of batch submissions to GenBank',
     url='https://github.com/adamkoziol/genomeAnnouncements',
     long_description=open('README.md').read(),
-    install_requires=['biopython >= 1.65'],
+    install_requires=['biopython >= 1.65','OLCTools'],
 )

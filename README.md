@@ -4,6 +4,7 @@
 
 * tbl2asn
 * Biopython
+* OLCTools
 
 Installation
  
