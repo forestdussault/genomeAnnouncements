@@ -1,6 +1,11 @@
 #! /usr/env/python
-from accessoryfiles import *
 import shutil
+from accessoryFunctions.accessoryFunctions import *
+from subprocess import call
+from threading import Thread
+from queue import Queue
+
+__author__ = 'adamkoziol'
 
 
 class Tbl2asn(object):
@@ -30,7 +35,6 @@ class Tbl2asn(object):
         """
         Run tbl2asn on each of the strains in order to create .sqn files
         """
-        from threading import Thread
         printtime('Creating .sqn files', self.start)
         for i in range(len(self.samples)):
             threads = Thread(target=self.tbl2asn, args=())
@@ -41,8 +45,6 @@ class Tbl2asn(object):
         self.queue.join()
 
     def tbl2asn(self):
-        from subprocess import call
-        import os
         while True:
             sample = self.queue.get()
             # Set the output file name, and the system call
@@ -66,7 +68,6 @@ class Tbl2asn(object):
             self.queue.task_done()
 
     def __init__(self, inputobject):
-        from Queue import Queue
         # Initialise the variables
         self.start = inputobject.start
         self.path = inputobject.path

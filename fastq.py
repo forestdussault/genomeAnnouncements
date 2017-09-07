@@ -1,6 +1,10 @@
 #!/usr/bin/env python
-from accessoryfiles import *
+import re
+from accessoryFunctions.accessoryFunctions import *
 from glob import glob
+from time import time
+from argparse import ArgumentParser
+
 __author__ = 'adamkoziol'
 
 
@@ -26,7 +30,6 @@ class Fastq(object):
 
     def fastq(self):
         """Renames fastq files to match assembly names"""
-        import re
         for sample in self.samples:
             # Get the names of the fastq files
             sample.fastq = sorted(glob('{}{}*'.format(self.sequencepath, sample.name)))
@@ -49,11 +52,10 @@ class Fastq(object):
                     sample.fastq[0], sample.fastq[1]
                 except IndexError:
                     # If this strain is truly missing or misnamed, raise the error
-                    print 'I can\'t find {}. Have the files already been renamed?'.format(sample.name)
+                    print('I can\'t find {}. Have the files already been renamed?'.format(sample.name))
                     raise
 
     def __init__(self, args):
-        from time import time
         self.start = time()
         # Initialise the variables
         self.path = os.path.join(args.path, '')
@@ -73,7 +75,6 @@ class Fastq(object):
 
 # If the script is called from the command line, then call the argument parser
 if __name__ == '__main__':
-    from argparse import ArgumentParser
     # Parser for arguments
     parser = ArgumentParser(description='Renames all .fastq files with desired names')
     parser.add_argument('path',

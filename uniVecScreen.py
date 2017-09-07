@@ -1,6 +1,6 @@
 #! /usr/env/python
 
-import glob, sys, os, errno, shutil
+import glob, os, errno, shutil
 
 path = "/media/nas/akoziol/GeneSipping/NCBI_submission/Sequences/2014-11-07"
 # path = "/media/nas/akoziol/Collaborations/Ashley"
@@ -23,7 +23,7 @@ files = glob.glob("*.fa*")
 
 for fasta in files:
     fileName = fasta.split(".")[0]
-    print fileName
+    print(fileName)
     make_path("%s/%s" % (path, fileName))
     # os.chdir("%s/%s" % (path, fileName)) -e 700
     blastCall = "blastall -p blastn -i %s -d /media/nas/akoziol/UniVec/IlluminaPrimers.fa " \

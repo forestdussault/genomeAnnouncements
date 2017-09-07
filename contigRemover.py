@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-from accessoryfiles import *
+import re
+from accessoryFunctions.accessoryFunctions import *
+from Bio import SeqIO
+
 __author__ = 'adamkoziol'
 
 
@@ -81,8 +84,6 @@ class Remove(object):
         """
         Remove the contaminated contigs from the assemblies
         """
-        from Bio import SeqIO
-        import re
         printtime('Removing contigs as required', self.start)
         for sample in self.samples:
             # Initialise lists to store contigs to exclude from the final assembly, and SeqIO records to be used

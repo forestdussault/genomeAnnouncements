@@ -1,7 +1,13 @@
 #!/usr/bin/env python
+import re
+import contigRemover
 from glob import glob
-from accessoryfiles import *
+from accessoryFunctions.accessoryFunctions import *
 from tbl2asn import Tbl2asn
+from Bio import SeqIO
+from time import time
+from argparse import ArgumentParser
+from csv import DictReader, Sniffer
 
 __author__ = 'adamkoziol'
 
@@ -21,7 +27,6 @@ class ContigPrepper(object):
     def populateobject(self):
         """Populate :self.strainorganism"""
         printtime('Creating objects', self.start)
-        from csv import DictReader, Sniffer
         # Grab all the contigs
         self.fastafiles = sorted(glob('{}*.fa*'.format(self.path)))
         # Set the header information for reading the organism file into a dictionary
@@ -59,7 +64,6 @@ class ContigPrepper(object):
 
     def prepcontigs(self):
         """Rename the contigs to NCBI format with on the organism"""
-        from Bio import SeqIO
         printtime('Renaming contigs', self.start)
         for sample in self.samples:
             # Reset the contig count to 1 for each sample
@@ -88,7 +92,6 @@ class ContigPrepper(object):
 
     def fastq(self):
         """Renames fastq files to match assembly names"""
-        import re
         printtime('Renaming .fastq files', self.start)
         for sample in self.samples:
             # Get the names of the fastq files
@@ -112,12 +115,11 @@ class ContigPrepper(object):
                     sample.fastq[0], sample.fastq[1]
                 except IndexError:
                     # If this strain is truly missing or misnamed, raise the error
-                    print sample.name
+                    print(sample.name)
                     raise
             self.dotter.dotter()
 
     def __init__(self, args):
-        from time import time
         self.start = time()
         # Initialise the variables
         self.path = os.path.join(args.path, '')
@@ -144,12 +146,11 @@ class ContigPrepper(object):
         self.dotter.globalcounter()
         # Remove contigs (if necessary)
         if args.exclude:
-            import contigRemover
             self.contaminationreport = os.path.join(self.path, args.contaminationreport) if \
                 args.contaminationreport else ''
             if not os.path.isfile(self.contaminationreport):
-                print 'Please ensure that you provided the name of the contamination report. And that this file ' \
-                      'is present in the path'
+                print('Please ensure that you provided the name of the contamination report. And that this file ' \
+                      'is present in the path')
                 quit()
             # Remove the contigs
             contigRemover.Remove(self)
@@ -163,12 +164,11 @@ class ContigPrepper(object):
             self.fastq()
             self.dotter.globalcounter()
             # Print a bold, green exit statement
-            print '\033[92m' + '\033[1m' + "\nElapsed Time: %0.2f seconds" % (time() - self.start) + '\033[0m'
+            print('\033[92m' + '\033[1m' + "\nElapsed Time: %0.2f seconds" % (time() - self.start) + '\033[0m')
 
 
 # If the script is called from the command line, then call the argument parser
 if __name__ == '__main__':
-    from argparse import ArgumentParser
     # Parser for arguments
     parser = ArgumentParser(description='Reformats all the headers in fasta files in a directory to be compatible for'
                                         ' NCBI submissions. The organism must be supplied for each sample. '
